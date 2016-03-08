@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<span class="text-success text-center"><h1>Rest Spring Security</h1><h1> Demo</h1></span>
+				</div>
+			</div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Sign In</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" name="loginForm">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="E-mail" name="email" type="email" ng-model="vm.data.email" autofocus required="required">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" name="password" type="password" ng-model="vm.data.password" value="" required="required">
+                            </div>
+                            <button type="submit" ng-click="vm.login()" class="btn btn-lg btn-success btn-block" ng-disabled="loginForm.$invalid">Login</button>
+                            
+                            <!-- Change this to a button or input when using this as a form -->
+                            <a ui-sref="register" class="btn btn-default btn-block btn-lg">Register</a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

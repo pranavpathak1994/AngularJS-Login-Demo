@@ -1,0 +1,40 @@
+<div class="container" ng-init="vm.getUser()">
+		<div class="row">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<span class="text-success text-center"><h1>Rest Spring Security</h1><h1> Demo</h1></span>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-md-6 col-md-offset-3">
+					<div class="login-panel panel panel-default">
+					
+						
+						<div class="panel-heading">
+							<h1 class="panel-title">Welcome {{vm.data.firstName}} {{vm.data.lastName }} </h1>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-user fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge"><span ng-repeat="auth in vm.data.authority">{{auth}}</span></div>
+                                </div>
+                                <div class="pull-right">{{vm.data.email }} </div>
+                            </div>
+						</div>
+						
+						<a ng-click="vm.logout()" href="">
+                            <div class="panel-footer">
+                                <span class="pull-left">Logout</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
